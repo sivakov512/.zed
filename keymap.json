@@ -1,0 +1,70 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "alt-cmd-o": ["projects::OpenRecent", { "create_new_window": false }]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "\\ i": "editor::Format",
+      "ctrl-\\": ["editor::ToggleComments", { "advance_downwards": false }]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-s": "project_panel::NewSearchInDirectory"
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "ctrl-d": "tab_switcher::CloseSelectedItem",
+      "ctrl-b": "tab_switcher::Toggle"
+    }
+  },
+  // Vim-like navigation
+  {
+    "context": "dock || terminal || editor",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-b": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      // Add sourroundings around selection by pressing S
+      "shift-s": ["vim::PushAddSurrounds", {}]
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "ctrl-s": "pane::DeploySearch",
+      "ctrl-f": "file_finder::Toggle"
+    }
+  }
+]
