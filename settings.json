@@ -22,9 +22,6 @@
     "light": "Gruvbox Light",
     "dark": "Gruvbox Dark"
   },
-  "tab_bar": {
-    "show": false
-  },
   "ui_font_family": "SF Pro",
   "ui_font_size": 14,
   "buffer_font_family": "SF Mono",
