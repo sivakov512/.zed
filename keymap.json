@@ -14,7 +14,12 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-g": "git_panel::ToggleFocus"
+      "cmd-shift-g": "git_panel::ToggleFocus",
+      "cmd-shift-t": "terminal_panel::ToggleFocus",
+      "alt-w h": "workspace::ToggleLeftDock",
+      "alt-w l": "workspace::ToggleRightDock",
+      "alt-w j": "workspace::ToggleBottomDock",
+      "alt-w k": "workspace::CloseAllDocks"
     }
   },
   {
