@@ -42,5 +42,13 @@
   "vim": {
     "toggle_relative_line_numbers": true,
     "use_system_clipboard": "never"
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "/usr/bin/clangd",
+        "arguments": ["--clang-tidy", "--background-index"]
+      }
+    }
   }
 }
