@@ -35,6 +35,9 @@
       "enabled": true
     }
   },
+  "tabs": {
+    "close_position": "left"
+  },
   "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true,
