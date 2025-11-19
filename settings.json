@@ -44,5 +44,10 @@
         "arguments": ["--clang-tidy", "--background-index"]
       }
     }
+  },
+  "dap": {
+    "Swift": {
+      "binary": "xcede"
+    }
   }
 }
