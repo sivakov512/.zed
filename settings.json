@@ -11,12 +11,8 @@
     "edit_prediction_provider": "zed"
   },
   "agent": {
-    "always_allow_tool_actions": true,
-    "default_profile": "write",
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    }
+    "default_profile": "ask",
+    "model_parameters": []
   },
   "theme": {
     "mode": "system",
@@ -27,7 +23,7 @@
   "ui_font_size": 14,
   "buffer_font_family": "SF Mono",
   "buffer_font_size": 12,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "diagnostics": {
     "include_warnings": true,
     "inline": {
